@@ -1,0 +1,71 @@
+
+.h1
+{
+    width: 100%;
+    height: auto;
+}
+.left
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    border-color: 1px, solid gray;
+}
+.right
+{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.clear
+{
+    clear:  both;
+}
+.p
+{
+    font-size: 30px;
+    border: 1px;
+    background-color: #bdc3c7;
+    margin-left: 10px;
+}
+.img
+{
+    width: 100%;
+    height: 300px;
+}
+.p1
+{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    color: #2ecc71;
+    border-radius: 5px;
+    border: 1px solid #2ecc71;
+    margin-top: 30px;
+}
+.btn01
+{
+    width: 250px;
+    text-align: center;
+    color: white;
+    background-color: #e74c3c;
+    height: 40px;
+}
+.btn2
+{
+    width: 150px;
+    text-align: center;
+    color: #010202;
+    background-color: #ecf0f1;
+    height: 40px;
+    border: 1px solid #3498db;
+}
+.btn2:hover
+{
+    background-color: #3498db;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+}
