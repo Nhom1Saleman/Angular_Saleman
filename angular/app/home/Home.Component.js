@@ -12,10 +12,11 @@ var homeComponent = /** @class */ (function () {
     }
     homeComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/home/Home.html'
+            templateUrl: 'app/home/home.html',
+            styleUrls: ['app/home/Home.Component.css']
         })
     ], homeComponent);
     return homeComponent;
 }());
 exports.homeComponent = homeComponent;
-//# sourceMappingURL=Home.component.js.map
+//# sourceMappingURL=Home.Component.js.map

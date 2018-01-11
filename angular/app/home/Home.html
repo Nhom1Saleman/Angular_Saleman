@@ -1,3 +1,224 @@
-<div> Emty
-    
+<div ng-app="myapp">
+    <!--Logo-->
+    <div class="container-fluid" id="logo">
+        <img src="images/1.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <!-- Menu Ngang-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <!-- Nút Toggle Xuất Hiện Khi Kéo Width xuống dưới 766px-->
+            <button type="button" class="navbar-toggle navbar-btn" id="sidebarCollapse" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Logo Giới Thiệu(Có Nút Chức Năng Mở Background Logo)-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="30" height="30" alt="" data-toggle="tooltip" data-placement="right" title="This is Logo">
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="pull-LR">
+            <ul class="nav navbar-nav">
+                <!-- Icon Email-->
+                <li class="dropdown messages-menu">
+                    <a target="_blank" href="https://mail.google.com" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o" data-toggle="tooltip" data-placement="top" title="Email"></i>
+                        <span class="label label-success">2</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 2 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>To DucSonTran</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 5 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>To DatNguyen</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a >See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Icon Chuông(Thông Báo)-------------------- -->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thông Báo"></i>
+                        <span class="label label-primary">3</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail2" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 3 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>Team Support</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 5 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>jQuery</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>JavaScript</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a >See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!----------------------------------------------->
+                <!-- Icon Cờ(Sự Kiện)---------------------------------->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-flag" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Sự Kiện"></i>
+                        <span class="label label-danger">4</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail3" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 4 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>HTML</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 5 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>CSS</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>BootStrap</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" >
+                                <p>AJAX</p>
+                                <p>
+                                    <small>
+                                        <i class="fa fa-clock-o"></i> 12 mins</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <nav id="sidebar">
+                    <div class="sidebar-header" style="text-align:center">
+                        Menu
+                    </div>
+
+                    <ul class="list-unstyled components">
+                        <!-- <li>
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Danh Sách Sản Phẩm</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li><a href="#">Máy Tính</a></li>
+                                <li><a href="#">Điện Thoại</a></li>
+                                <li><a href="#">Tai Nghe</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Danh Sách</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li><a href="#">dwadwa</a></li>
+                                <li><a href="#">weadwa</a></li>
+                                <li><a href="#">Pfefe</a></li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a [routerLink]="['products']">Danh Sách Sản Phẩm</a>
+                        </li>
+                        <li>
+                            <a href="#" [routerLink]="['bill']">Danh Sách Đơn Hàng</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+<div class="col-lg-9">
+<div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" style="width: 100%;height: 500px;">
+        <div class="item active">
+          <img src="https://images.techhive.com/images/article/2014/06/alienware17_a-100310309-orig.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/02/03/Dell_Alienware_17(1).jpg" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="http://i.dell.com/sites/imagecontent/products/PublishingImages/alienware-17/laptop-aw-17-pdp-love-design-2.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </div>
 </div>

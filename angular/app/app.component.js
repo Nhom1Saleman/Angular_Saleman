@@ -13,7 +13,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
-            template: " \n    <div class=\"container-fluid\">\n        <div class=\"col-md-12\">\n            <div class=\"col-md-2\" id=\"left-menu\">\n                <div class=\"user-id\" >\n                    <img />\n                    <span> User Name</span>\n                </div>\n                <div>\n                    <div class=\"input-group\">\n                        <input type=\"text\" placeholder=\"Search\" class=\"form-control\" />\n                        <span class=\"input-group-btn\">\n                            <button type=\"submit\" class=\"btn btn-danger\"><i class=\"fa fa-search\"></i></button>\n                        </span>\n                    </div>\n                </div>\n              <div class=\"menu-side\">\n                    <ul>\n                        <li> Danh m\u1EE5c </li>\n                        <li><a [routerLink]=\"['/home']\"><strong>HOME</strong></a></li>\n                        <li><a [routerLink]=\"['/products']\"><strong>S\u1EA2N PH\u1EA8M</strong></a></li>\n                        <li><a [routerLink]=\"['/bill']\"><strong>\u0110\u01A0N H\u00C0NG</strong></a></li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"col-md-10\" id=\"start-up\"> \n                <router-outlet></router-outlet>\n            </div> \n        </div>\n    </div>\n    ",
+            template: "\n    <router-outlet></router-outlet>\n    "
         })
     ], AppComponent);
     return AppComponent;

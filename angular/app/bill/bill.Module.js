@@ -8,8 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var platform_browser_1 = require("@angular/platform-browser");
 var bill_component_1 = require("./bill.component");
 var bill_details_component_1 = require("./bill-details.component");
+var bill_Service_1 = require("./bill.Service");
 var billModule = /** @class */ (function () {
     function billModule() {
     }
@@ -18,16 +20,17 @@ var billModule = /** @class */ (function () {
             declarations: [
                 bill_component_1.billComponent, bill_details_component_1.bill_detailsComponent
             ],
-            imports: [
+            imports: [platform_browser_1.BrowserModule,
                 router_1.RouterModule.forChild([
-                    { path: 'bill', component: bill_component_1.billComponent },
-                    { path: 'bill_details', component: bill_details_component_1.bill_detailsComponent }
-                ]),
-            ],
-            providers: []
+                    { path: 'home/bill', component: bill_component_1.billComponent },
+                    { path: 'home/bill/:id', component: bill_details_component_1.bill_detailsComponent },
+                ])],
+            providers: [
+                bill_Service_1.billsService
+            ]
         })
     ], billModule);
     return billModule;
 }());
 exports.billModule = billModule;
-//# sourceMappingURL=bill.module.js.map
+//# sourceMappingURL=bill.Module.js.map

@@ -1,200 +1,277 @@
-<div class="Coh">
-    <div class="container">
-    <section class="content-header">
-        <h1>Sale Man</h1>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Quản Lý</a></li>
-            <li class="breadcrumb-item active"><a href="#">Sản Phẩm</a></li>
-        </ol>
-    </section>
-    <div class="row as">
-        <div class="col-md-6 ">
-            <form class="main-form " action="" method="post">
-                <div class="form-group">
-                    <input class="form-control" data-val="true" data-val-required="Vui lòng nhập mã Sản Phẩm" id="SP" name="Sản Phẩm" placeholder="Nhập Mã Sản Phẩm" type="text" value="" />
-                    <div class="form-icon lin lin-user"></div>
-                </div>
-            </form>
+
+<div ng-app="myapp">
+    <!--Logo-->
+    <div class="container-fluid" id="logo">
+        <img src="images/1.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <!-- Menu Ngang-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <!-- Nút Toggle Xuất Hiện Khi Kéo Width xuống dưới 766px-->
+            <button type="button" class="navbar-toggle navbar-btn" id="sidebarCollapse" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!---->
+            <!-- Logo Giới Thiệu(Có Nút Chức Năng Mở Background Logo)-->
+            <a class="navbar-brand" href="#"><img src="images/logo.png" width="30" height="30" alt="" data-toggle="tooltip" data-placement="right" title="This is Logo"></a>
         </div>
-        <div class="col-md-4">
-            <input type="button" value="Hiển Thị" class="btn btn-default btn-ghost">
+
+        <div class="navbar-collapse collapse" id="pull-LR">
+            <ul class="nav navbar-nav">
+                <!-- Icon Email -->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o" data-toggle="tooltip" data-placement="top" title="Email"></i>
+                        <span class="label label-success">2</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 2 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>To DucSonTran</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>To DatNguyen</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <!---->
+                <!-- Icon Chuông(Thông Báo)-->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thông Báo"></i>
+                        <span class="label label-primary">3</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail2" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 3 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>Team Support</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>jQuery</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>JavaScript</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!----------------------------------------------->
+                <!-- Icon Cờ(Sự Kiện)---------------------------------->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-flag" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Sự Kiện"></i>
+                        <span class="label label-danger">4</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail3" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 4 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>HTML</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>CSS</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>BootStrap</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>AJAX</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2">
+         
+            </div>
+<div class="col-lg-8">
+<h1 class="biliboard repeating" style="text-align:center"> Thông Tin Sản Phẩm </h1>
+<div class="panel panel-primary" *ngFor='let Test of Testings'>
+    <div class="panel-heading"><a [routerLink]="['/home/products',Test.ProductID ]" style="color: white;">Sản Phẩm</a></div>
+    <div class="panel-body">
+        <div ng-controller="HeaderController">
+            <div class="jumbotron">
+                <table class="table table-compare">
+                    <!--Mã Sản Phẩm-->
+                    <tr>
+                        <td class="compare-label">Mã Sản Phẩm</td>
+                        <td>{{Test.ProductID}}</td>
+                    </tr>
+                    <!--Danh Mục Sản Phẩm-->
+                    <tr>
+                        <td class="compare-label">Tên Sản Phẩm</td>
+                        <td>{{Test.ProductName}}</td>
+                    </tr>
+                    <!--Nhãn Hiệu-->            
+                    <tr>
+                        <td class="compare-label">Giá Gốc</td>
+                        <td>{{Test.UnitPrice}}</td>
+                    </tr>
+                    <!--Nhà Phân Phối-->
+                    <tr>
+                        <td class="compare-label">Số Lượng Còn</td>
+                        <td>{{Test.TotalRows}}</td>
+                    </tr>
+                    <!--Unit-->
+                    <!--SKU-->
+                    <!--Thuế-->   
+                    <!-- Đánh Giá-->            
+                    <tr>
+                        <td class="compare-label">Đánh Giá</td>
+                        <td>
+                            <div class="product-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                
+                                <span>(3.5 Điểm)</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--Chỉnh Sửa-->
+                    <tr>
+                        <td class="compare-label"></td>
+                        <td class="action">
+                            <button class="add-cart button button-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Thay Đổi</button>
+                            <button class="button button-sm"><i class="fa fa-close"></i>  Xóa</button>
+                        </td>
+                    </tr>
+                </table>
+                <button id="bt-ctsp" class="button-ctsp" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-info-circle"></i>  Chi Tiết Sản Phẩm</button>
+                
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Thông Tin Sản Phẩm</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img class="img" src="./app/products/laptop.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <table class="table table-compare">
+                                            <!--Mã Số Sản Phẩm-->
+                                            <tr>
+                                                <td class="compare-label">Mã Số Sản Phẩm</td>
+                                                <td>{{Test.ProductID}}</td>
+                                            </tr>
+                                            <!--Code Sản Phẩm-->            
+                                            <tr>
+                                                <td class="compare-label">CODE</td>
+                                                <td>{{Test.ProductCode}}</td>
+                                            </tr>
+                                            <!--Tên Sản Phẩm-->
+                                            <tr>
+                                                <td class="compare-label">Tên Sản Phẩm</td>
+                                                <td>{{Test.ProductName}}</td>
+                                            </tr>
+                                            <!--Giá Sản Phẩm-->            
+                                            <tr>
+                                                <td class="compare-label">Giá Gốc</td>
+                                                <td>{{Test.UnitPrice}}</td>
+                                            </tr>
+                                            <!--Đơn Vị-->
+                                            <tr>
+                                                <td class="compare-label">Đơn Vị</td>
+                                                <td>{{Test.Unit}}</td>
+                                            </tr>
+                                            <!--Giá Khuyến Mãi-->            
+                                            <tr>
+                                                <td class="compare-label">Giá Khuyến Mãi</td>
+                                                <td>{{Test.UnitPrice_Employee}}</td>
+                                            </tr>
+                                            <!--Thới Gian Bảo Hành-->
+                                            <tr>
+                                                <td class="compare-label">Bảo Hành</td>
+                                                <td>{{Test.WarrantyPeriod}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-label">Số Lượng Còn</td>
+                                                <td>{{Test.TotalRows}}</td>
+                                            </tr>           
+                                            <tr>
+                                                <td class="compare-label">Đánh Giá</td>
+                                                <td>
+                                                    <div class="product-star">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-half-o"></i>
+                                                        
+                                                        <span>(3.5 Điểm)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--Chỉnh Sửa-->
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
-    
-    <section class="content">
-        <div class="container zz" >
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a [routerLink]="['/product_details']"> Gói dịch vụ  phần mềm</a> <span class="label-warning">New</span></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-1">
-                                        <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                      <br><br>
-                                        <button type="button" class="btn2 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Mã Sản Phẩm</strong></p>
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Danh Mục Sản Phẩm</strong></p>
-                                    <p>&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i>&emsp;<strong>Nhãn Hiệu</strong></p>
-                                    <p><i class="fa fa-truck" aria-hidden="true"></i>&emsp;<strong>Nhà Phân Phối</strong></p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>:PM0909011999</p>
-                                    <p>:</p>
-                                    <p>:Phong Vu</p>
-                                    <p>:</p>
-                                </div>
-        
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>  <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Unit</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>SKU</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>Thuế</strong></p>
-                                    <p><i class="fa fa-money" aria-hidden="true"></i>&emsp;<strong>Giá</strong></p>
-                                </div>
-                                <div class="col-md-2 col-sm-2 aa1">
-                                    <p>:</p>
-                                    <p> :9097512312312</p>
-                                    <p>:10</p>
-                                    <p>:10000000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container zz" >
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#"> Gói phần mềm Quản Lý</a> <span class="label-warning">New</span></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-1">
-                                        <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                      <br><br>
-                                        <button type="button" class="btn2 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Mã Sản Phẩm</strong></p>
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Danh Mục Sản Phẩm</strong></p>
-                                    <p>&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i>&emsp;<strong>Nhãn Hiệu</strong></p>
-                                    <p><i class="fa fa-truck" aria-hidden="true"></i>&emsp;<strong>Nhà Phân Phối</strong></p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>:000101010101</p>
-                                    <p>:</p>
-                                    <p>:Phong Vu</p>
-                                    <p>:</p>
-                                </div>
-        
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>  <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Unit</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>SKU</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>Thuế</strong></p>
-                                    <p><i class="fa fa-money" aria-hidden="true"></i>&emsp;<strong>Giá</strong></p>
-                                </div>
-                                <div class="col-md-2 col-sm-2 aa1">
-                                    <p>:</p>
-                                    <p> :809812631212123</p>
-                                    <p>:10</p>
-                                    <p>:10000000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container zz" >
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#"> Sản Phẩm 1</a> <span class="label-warning">New</span></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-1">
-                                        <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                      <br><br>
-                                        <button type="button" class="btn2 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Mã Sản Phẩm</strong></p>
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Danh Mục Sản Phẩm</strong></p>
-                                    <p>&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i>&emsp;<strong>Nhãn Hiệu</strong></p>
-                                    <p><i class="fa fa-truck" aria-hidden="true"></i>&emsp;<strong>Nhà Phân Phối</strong></p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                </div>
-        
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>  <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Unit</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>SKU</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>Thuế</strong></p>
-                                    <p><i class="fa fa-money" aria-hidden="true"></i>&emsp;<strong>Giá</strong></p>
-                                </div>
-                                <div class="col-md-2 col-sm-2 aa1">
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container zz" >
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#">Sản phẩm 2</a> <span class="label-warning">New</span></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-1">
-                                        <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                      <br><br>
-                                        <button type="button" class="btn2 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Mã Sản Phẩm</strong></p>
-                                    <p> <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Danh Mục Sản Phẩm</strong></p>
-                                    <p>&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i>&emsp;<strong>Nhãn Hiệu</strong></p>
-                                    <p><i class="fa fa-truck" aria-hidden="true"></i>&emsp;<strong>Nhà Phân Phối</strong></p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>: </p>
-                                    <p>:</p>
-                                </div>
-        
-                                <div class="col-md-3 col-sm-3 aa1">
-                                    <p>  <i class="fa fa-cube" aria-hidden="true"></i>&emsp;<strong>Unit</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>SKU</strong></p>
-                                    <p> <i class="fa fa-barcode" aria-hidden="true"></i>&emsp;<strong>Thuế</strong></p>
-                                    <p><i class="fa fa-money" aria-hidden="true"></i>&emsp;<strong>Giá</strong></p>
-                                </div>
-                                <div class="col-md-2 col-sm-2 aa1">
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                    <p>:</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>
 </div>
 </div>
+<div class="col-lg-2">
+    <button type="button" id="btn-rt" class="button-rt" (click)="rollback()" style="width: 120px;height: 40px;line-height: 20px;"><i class="fa fa-arrow-left" aria-hidden="true">Trở Về</i></button>
+       </div>

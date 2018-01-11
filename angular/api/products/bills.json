@@ -1,0 +1,12 @@
+[
+    {
+        "billid": "PM0909011999",
+        "billType": "Dich Vu",
+        "creater": "Son Ocs",
+        "createDate": "31-08-1998",
+        "customerId": "113114115116",
+        "status" :"none",
+        "address": "Cong An P.13 Q.TanBinh",
+        "price":1   
+    }
+]

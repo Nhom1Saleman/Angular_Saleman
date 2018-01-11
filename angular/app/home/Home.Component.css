@@ -1,0 +1,436 @@
+
+#logo {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+    #logo:hover img {
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+
+    #logo img, #logo:hover img {
+        transition: all 2s ease;
+    }
+
+#pull-LR {
+    float: right;
+}
+
+.navbar-brand > img {
+    height: 60px;
+    width: 60px;
+    margin-top: -15px;
+}
+
+
+#menu-mail > li {
+    height: 2.8em;
+    border-bottom: solid 0.7px;
+}
+
+#menu-mail2 > li {
+    height: 2.8em;
+    border-bottom: solid 0.7px;
+}
+
+#menu-mail3 > li {
+    height: 2.8em;
+    border-bottom: solid 0.7px;
+}
+
+#menu-mail > li a:hover {
+    background-color: #00a65a;
+    color: #F0FFF0;
+}
+
+#menu-mail2 > li a:hover {
+    background-color: dodgerblue;
+    color: #F0FFF0;
+}
+
+#menu-mail3 > li a:hover {
+    background-color: red;
+    color: #F0FFF0;
+}
+
+
+#menu-mail > li a {
+    padding-top: 0.5em;
+    line-height: 0.5;
+    height: 2.7em;
+}
+
+#menu-mail2 > li a {
+    padding-top: 0.5em;
+    line-height: 0.5;
+    height: 2.7em;
+}
+
+#menu-mail3 > li a {
+    padding-top: 0.5em;
+    line-height: 0.5;
+    height: 2.7em;
+}
+
+#menu-mail > li:last-child a {
+    line-height: 2;
+    height: 2.7em;
+}
+
+#menu-mail2 > li:last-child a {
+    line-height: 2;
+    height: 2.7em;
+}
+
+#menu-mail3 > li:last-child a {
+    line-height: 2;
+    height: 2.7em;
+}
+
+#dropdownMenuButton > i {
+    font-size: 2em;
+    margin-left: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#dropdownMenuButton > span {
+    vertical-align: top;
+}
+
+
+.messages-menu {
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: 2em;
+    background: #3498db;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+    #sidebar.active {
+        margin-left: -250px;
+        transform: rotateY(100deg);
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #9b59b6;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p {
+        color: #fff;
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+        #sidebar ul li a:hover {
+            color: #34495e;
+            background: #fff;
+        }
+
+    #sidebar ul li.active > a, a[aria-expanded="true"] {
+        color: #ecf0f1;
+        background: #2ecc71;
+    }
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #f1c40f;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+    ul.CTAs a {
+        text-align: center;
+        font-size: 0.9em !important;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#sidebar nav {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: transform 0.5s;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#sidebar:hover {
+    box-shadow: 30px 26px 15px -6px rgba(0,0,0,0.3);
+    transform: translate(-5px,-5px);
+}
+
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+    #sidebarCollapse span {
+        width: 80%;
+        height: 2px;
+        margin: 0 auto;
+        display: block;
+        background: #555;
+        transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+        transition-delay: 0.2s;
+    }
+
+        #sidebarCollapse span:first-of-type {
+            transform: rotate(45deg) translate(2px, 2px);
+        }
+
+        #sidebarCollapse span:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        #sidebarCollapse span:last-of-type {
+            transform: rotate(-45deg) translate(1px, -1px);
+        }
+
+
+    #sidebarCollapse.active span {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+@keyframes linear {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200px 0;
+    }
+}
+
+@keyframes repeating {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 85px;
+    }
+}
+
+.biliboard {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    color: #333;
+    font: 1.8em open, tahoma;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .biliboard:before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+        transform: scale( 1.02, 1.08 );
+        position: absolute;
+        background: #f00;
+        background: linear-gradient( 90deg, #fafafa, #fafafa, #1D8EF7, #fafafa, #fafafa );
+        background-position: 55px 0;
+        top: 0;
+        animation: linear 1s infinite linear;
+        left: 0;
+        z-index: -1;
+    }
+
+    .biliboard.repeating:before {
+        background: repeating-linear-gradient( -45deg, #fafafa, #fafafa 30px, #5FC914 30px, #5FC914 60px ) fixed;
+        animation: repeating 0.5s infinite linear;
+    }
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+}
+
+    .pagination li {
+        display: inline;
+        text-align: center;
+    }
+
+    .pagination a {
+        float: left;
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 5px 12px;
+        color: #fff;
+        margin-left: -1px;
+        border: 1px solid transparent;
+        line-height: 1.5;
+    }
+
+        .pagination a.active {
+            cursor: default;
+        }
+
+        .pagination a:active {
+            outline: none;
+        }
+
+.modal-1 li:first-child a {
+    border-radius: 6px 0 0 6px;
+}
+
+.modal-1 li:last-child a {
+    border-radius: 0 6px 6px 0;
+}
+
+.modal-1 a {
+    border-color: #ddd;
+    color: #4285F4;
+    background: #fff;
+}
+
+    .modal-1 a:hover {
+        background: #eee;
+    }
+
+    .modal-1 a.active, .modal-1 a:active {
+        border-color: #4285F4;
+        background: #4285F4;
+        color: #fff;
+    }
+@media screen and (max-width: 764px) {
+
+    #pull-LR {
+        float: left;
+        width: 180px;
+    }
+
+    .navbar-brand > img {
+        height: 50px;
+        width: 50px;
+        margin-top: -15px;
+    }
+}
+.slider-container
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+.menu 
+{
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+.menu label 
+{
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    transition: all .3s ease;
+}
+  /* .slide :active {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s; 
+  }
+  [id^="slide"]:checked + .slide 
+  {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  .slide-1 
+  {
+    background-image: url("https://images.techhive.com/images/article/2014/06/alienware17_a-100310309-orig.jpg");
+  }
+  .slide-2 
+  {
+    background-image: url("https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/02/03/Dell_Alienware_17(1).jpg");
+  }
+  .slide-3 
+  {
+    background-image: url("http://i.dell.com/sites/imagecontent/products/PublishingImages/alienware-17/laptop-aw-17-pdp-love-design-2.jpg");
+  }
+  .az1
+  {
+      height: 750px;
+  } */

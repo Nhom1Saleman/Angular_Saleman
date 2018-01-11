@@ -9,25 +9,27 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
-var Home_component_1 = require("./home/Home.component");
-var products_module_1 = require("./products/products.module");
-var bill_module_1 = require("./bill/bill.module");
+var login_component_1 = require("./login/login.component");
+var Home_module_1 = require("./home/Home.module");
+var login_service_1 = require("./login/login.service");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule,
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule,
                 router_1.RouterModule.forRoot([
-                    { path: 'home', component: Home_component_1.homeComponent },
-                    { path: '', redirectTo: 'home', pathMatch: 'full' },
-                    { path: '**', redirectTo: 'home', pathMatch: 'full' },
-                ]), products_module_1.ProductModule, bill_module_1.billModule,
+                    { path: 'login', component: login_component_1.LoginComponent },
+                    { path: '', redirectTo: 'login', pathMatch: 'full' },
+                    { path: '**', redirectTo: 'login', pathMatch: 'full' }
+                ]), Home_module_1.HomeModule
             ],
-            declarations: [app_component_1.AppComponent, Home_component_1.homeComponent],
-            bootstrap: [app_component_1.AppComponent]
+            declarations: [app_component_1.AppComponent, login_component_1.LoginComponent],
+            bootstrap: [app_component_1.AppComponent],
+            providers: [login_service_1.loginService]
         })
     ], AppModule);
     return AppModule;

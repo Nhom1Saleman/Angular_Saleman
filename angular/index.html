@@ -3,22 +3,30 @@
 
 <head lang="en">
     <base href="/">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sale Man Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="node_modules/fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="app/app.component.css" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./app/login/login.component.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="home.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.js" ></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <!-- <script src="app/shared/angular.js" ></script> -->
+
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-    
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script href="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
 
     <!-- Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -26,58 +34,7 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
 </head>
-
-<body>
-        <div class="Main-container">
-                <nav class="navbar navbar-default" role="navigation" id="top-menu">
-                    <div class="container-fluid" id="top-menu">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle Navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#"></a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="menu-element">
-                            <ul class="nav navbar-nav" >
-                                <li><a><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                <li><a><i class="fa fa-bell" aria-hidden="true" ></i></a></li>
-                                <li><a><i class="fa fa-flag" aria-hidden="true"></i></a></li>
-                                <li>
-                                    <a><img  /> User name</a>                            
-                                </li>
-                                <li>                           
-                                    <a> <span>Log-out</span><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="container-fluid" id="epic" >
-                    <div class="col-md-12">
-                        <div  class="col-md-2" id="backgound-epic">
-                            <div class="left-side"><img src="businessman.png" /></div>
-                            <div class="right-side">
-                                <div class="right-left">
-                                    <h1>SALEMAN</h1>
-                                    <p>For Shipper</p>
-                                    <p>Welcome you~!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-10" id="main">
-                            <div>
-        
-                            </div>
-        
-                        </div>
-                    </div>
-                </div>                
-                <pm-app></pm-app>  
-            </div>
-
+<body style="background: #bdc3c7;">
+  <pm-app></pm-app>
 </body>
-
 </html>

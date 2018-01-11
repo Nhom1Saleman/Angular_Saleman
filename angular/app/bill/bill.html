@@ -1,4 +1,4 @@
-<div class="Coh">
+<!-- <div class="Coh" >
     <p class="head">
         <b>Saleman</b>
         <b class="head1">Product</b>
@@ -24,7 +24,7 @@
         </div>
     </div>
     
-    <section class="content">
+    <section class="content" *ngFor='let Test of Testings'>
     <div class="container" id="TTSP">
             <div class="panel panel-success">
                 <div class="panel-heading">
@@ -33,126 +33,308 @@
                 <div class="panel-body">
                     <div class="jumbotron">
                         <div class="row">
-                            <div class="col-md-1 col-sm-1">
+                            <div class="col-md-1 col-sm-1 aa1">
                                     <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
                                   <br><br>
-                                    <button type="button" class="btn1 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn2 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
                             </div>
-                            <div class="col-md-3 col-sm-3">
-                                <p><i class="fa fa-cube" aria-hidden="true"></i>Mã Đơn Hàng</p>
-                                <p><i class="fa fa-cube" aria-hidden="true"></i>Danh Mục Sản Phẩm</p>
-                                <p><i class="fa fa-user" aria-hidden="true"></i>Người Tạo</p>
-                                <p><i class="fa fa-calendar" aria-hidden="true"></i>Ngày Tạo</p>
+                            <div class="col-md-3 col-sm-3 aa1">
+                                <p><i class="fa fa-cube" aria-hidden="true"></i><b>Mã Đơn Hàng</b></p>
+                                <p><i class="fa fa-cube" aria-hidden="true"></i><b>Mục Sản Phẩm</b></p>
+                                <p><i class="fa fa-user" aria-hidden="true"></i><b>Người Tạo</b></p>
+                                <p><i class="fa fa-calendar" aria-hidden="true"></i><b>Ngày Tạo</b></p>
                             </div>
-                            <div class="col-md-3 col-sm-3">
-                                <p>:PM0909011999</p>
-                                <p>:Dịch Vụ</p>
-                                <p>:Trần Đức Sơn</p>
-                                <p>31/08/1998</p>
+                            <div class="col-md-3 col-sm-3 aa1">
+                                <p>{{Test.BookCode}}</p>
+                                <p>{{Test.BookName}}</p>
+                                <p>{{Test.AuthorName}}</p>
+                                <p></p>
                             </div>
     
-                            <div class="col-md-3 col-sm-3">
-                                <p><i class="fa fa-user " aria-hidden="true"></i>Mã Khách Hàng</p>
-                                <p><i class="fa fa-times " aria-hidden="true"></i>Trạng Thái</p>
-                                <p><i class="fa fa-map-marker " aria-hidden="true"></i>Địa Chỉ</p>
-                                <p><i class="fa fa-money" aria-hidden="true"></i>Giá</p>
+                            <div class="col-md-3 col-sm-3 aa1">
+                                <p><i class="fa fa-user " aria-hidden="true"></i><b>Mã Khách Hàng</b></p>
+                                <p><i class="fa fa-times " aria-hidden="true"></i><b>Trạng Thái</b></p>
+                                <p><i class="fa fa-map-marker " aria-hidden="true"></i><b>Địa Chỉ</b></p>
+                                <p><i class="fa fa-money" aria-hidden="true"></i><b>Giá</b></p>
                             </div>
-                            <div class="col-md-2 col-sm-2">
-                                <p>:9097512312312</p>
-                                <p>:</p>
-                                <p>:10</p>
-                                <p>:100000</p>
+                            <div class="col-md-2 col-sm-2 aa1">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container" id="TTSP">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a [routerLink]="['/bill_details']">Đơn Hàng 2</a> <span class="label-warning">New</span></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-1">
-                                        <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                      <br><br>
-                                        <button type="button" class="btn1 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                    <p><i class="fa fa-cube" aria-hidden="true"></i>Mã Đơn Hàng</p>
-                                    <p><i class="fa fa-cube" aria-hidden="true"></i>Danh Mục Sản Phẩm</p>
-                                    <p><i class="fa fa-user" aria-hidden="true"></i>Người Tạo</p>
-                                    <p><i class="fa fa-calendar" aria-hidden="true"></i>Ngày Tạo</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                    <p>:PM0909011999</p>
-                                    <p>:Dịch Vụ</p>
-                                    <p>:Trần Đức Sơn</p>
-                                    <p>31/08/1998</p>
-                                </div>
         
-                                <div class="col-md-3 col-sm-3">
-                                    <p><i class="fa fa-user " aria-hidden="true"></i>Mã Khách Hàng</p>
-                                    <p><i class="fa fa-times " aria-hidden="true"></i>Trạng Thái</p>
-                                    <p><i class="fa fa-map-marker " aria-hidden="true"></i>Địa Chỉ</p>
-                                    <p><i class="fa fa-money" aria-hidden="true"></i>Giá</p>
+        </section>
+</div> -->
+<div ng-app="myapp">
+        <!--Logo-->
+        <div class="container-fluid" id="logo">
+            <img src="images/1.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+    
+        <!-- Menu Ngang-->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <!-- Nút Toggle Xuất Hiện Khi Kéo Width xuống dưới 766px-->
+                <button type="button" class="navbar-toggle navbar-btn" id="sidebarCollapse" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo Giới Thiệu(Có Nút Chức Năng Mở Background Logo)-->
+                <a class="navbar-brand" ><img src="images/logo.png" width="30" height="30" alt="" data-toggle="tooltip" data-placement="right" title="This is Logo"></a>
+            </div>
+    
+            <div class="navbar-collapse collapse" id="pull-LR">
+                <ul class="nav navbar-nav">
+                    <!-- Icon Email -->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o" data-toggle="tooltip" data-placement="top" title="Email"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu" id="menu-mail" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-header">
+                                You have 2 messages
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>To DucSonTran</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>To DatNguyen</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li class="footer">
+                                <a href="#">See All Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!---->
+                    <!-- Icon Chuông(Thông Báo)-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thông Báo"></i>
+                            <span class="label label-primary">3</span>
+                        </a>
+                        <ul class="dropdown-menu" id="menu-mail2" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-header">
+                                You have 3 messages
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>Team Support</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>jQuery</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>JavaScript</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li class="footer">
+                                <a href="#">See All Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <!--->
+                    <! Icon Cờ(Sự Kiện)-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Sự Kiện"></i>
+                            <span class="label label-danger">4</span>
+                        </a>
+                        <ul class="dropdown-menu" id="menu-mail3" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-header">
+                                You have 4 messages
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>HTML</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>CSS</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>BootStrap</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <p>AJAX</p>
+                                    <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                                </a>
+                            </li>
+                            <li class="footer">
+                                <a href="#">See All Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-2">
+                   
+                </div>
+    
+    <div class="col-lg-8" >
+   
+    <h1 class="biliboard repeating" style="text-align:center"> Thông Tin Đơn Hàng</h1>
+    <div class="panel panel-primary" *ngFor='let Test of Testings'>
+        <div class="panel-heading" *ngIf="Testing"><a  style="color: white;">Đơn Hàng</a></div>
+        <div class="panel-body" >
+            <div ng-controller="HeaderController">
+                <div class="jumbotron">
+                    <table class="table table-compare">
+                        <!--Mã Sản Phẩm-->
+                        <tr>
+                            <td class="compare-label">Mã Sản Phẩm</td>
+                            <!-- <td>SamSung Galaxy</td>
+                            <td>IPhoneX</td>
+                            <td>Nokia Lumia</td> -->
+                            <td>{{Test.BookCode}}</td>
+                        </tr>
+                        <!--Danh Mục Sản Phẩm-->
+                        <tr>
+                            <td class="compare-label">Danh Mục Sản Phẩm</td>
+                            <!-- <td class="instock"></td>
+                            <td class="outofstock"></td>
+                            <td class="instock"></td> -->
+                            <td>{{Test.BookName}}</td>
+                        </tr>
+                        <!--Nhãn Hiệu-->            
+                        <!--Nhà Phân Phối-->
+                        <tr>
+                            <td class="compare-label">Nhà Phân Phối</td>
+                            <td>{{Test.AuthorName}}</td>
+                        </tr>
+                        <!--Unit-->
+                        <!--SKU-->
+                        <!--Thuế--> 
+                        <tr>
+                            <td class="compare-label">Giá</td>
+                            <td class="price-g">$20</td>
+                        </tr>  
+                        <!-- Đánh Giá-->            
+                        <tr>
+                            <td class="compare-label">Đánh Giá</td>
+                            <td>
+                                <div class="product-star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    
+                                    <span>(3.5 Điểm)</span>
                                 </div>
-                                <div class="col-md-2 col-sm-2">
-                                    <p>:9097512312312</p>
-                                    <p>:</p>
-                                    <p>:10</p>
-                                    <p>:100000</p>
+                            </td>
+                        </tr>
+                        <!--Chỉnh Sửa-->
+                        <tr>
+                            <td class="compare-label"></td>
+                            <td class="action">
+                                <button class="add-cart button button-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Thay Đổi</button>
+                                <button class="button button-sm"><i class="fa fa-close"></i>  Xóa</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <button id="bt-ctsp" class="button-ctsp" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-info-circle" aria-hidden="true"></i>  Chi Tiết Đơn hàng</button>
+                    <div  class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document" >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Thông Tin Sản Phẩm</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body" >
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img class="img" src="./app/products/laptop.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <table class="table table-compare">
+                                                <!--Mã Sản Phẩm-->
+                                                <tr>
+                                                    <td class="compare-label">Mã Sách</td>
+                                                    <td>{{Test.BookCode}}</td>
+                                                </tr>
+                                                <!--Danh Mục Sản Phẩm-->
+                                                <tr>
+                                                    <td class="compare-label">Tên Sách</td>
+                                                    <td>{{Test.BookName}}</td>
+                                                </tr>
+                                                <!--Nhãn Hiệu-->            
+                                                <tr>
+                                                    <td class="compare-label">Tác Giả</td>
+                                                    <td>{{Test.AuthorName}}</td>
+                                                </tr>
+                                                <!--Nhà Phân Phối-->
+                                                <tr>
+                                                    <td class="compare-label">Năm Xuất Bản</td>
+                                                    <td>{{Test.PublishYear}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="compare-label">Nhà Xuất Bản</td>
+                                                    <td>{{Test.PublishingCompany}}</td>
+                                                </tr>            
+                                                <tr>
+                                                    <td class="compare-label">Đánh Giá</td>
+                                                    <td>
+                                                        <div class="product-star">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <span>(3.5 Điểm)</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!--Chỉnh Sửa-->
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
             </div>
-            <div class="container" id="TTSP">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><a [routerLink]="['/bill_details']">Đơn Hàng 3</a> <span class="label-warning">New</span></h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="jumbotron">
-                                <div class="row">
-                                    <div class="col-md-1 col-sm-1">
-                                            <button type="button" class="btn1 btn-primary"><i class="fa fa-pencil-square-o  fa-lg" aria-hidden="true"></i></button>
-                                          <br><br>
-                                            <button type="button" class="btn1 btn-danger"><i class="fa fa-times  fa-lg" aria-hidden="true"></i></button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-3">
-                                        <p><i class="fa fa-cube" aria-hidden="true"></i>Mã Đơn Hàng</p>
-                                        <p><i class="fa fa-cube" aria-hidden="true"></i>Danh Mục Sản Phẩm</p>
-                                        <p><i class="fa fa-user" aria-hidden="true"></i>Người Tạo</p>
-                                        <p><i class="fa fa-calendar" aria-hidden="true"></i>Ngày Tạo</p>
-                                    </div>
-                                    <div class="col-md-3 col-sm-3">
-                                        <p>:PM0909011999</p>
-                                        <p>:Dịch Vụ</p>
-                                        <p>:Trần Đức Sơn</p>
-                                        <p>31/08/1998</p>
-                                    </div>
-            
-                                    <div class="col-md-3 col-sm-3">
-                                        <p><i class="fa fa-user " aria-hidden="true"></i>Mã Khách Hàng</p>
-                                        <p><i class="fa fa-times " aria-hidden="true"></i>Trạng Thái</p>
-                                        <p><i class="fa fa-map-marker " aria-hidden="true"></i>Địa Chỉ</p>
-                                        <p><i class="fa fa-money" aria-hidden="true"></i>Giá</p>
-                                    </div>
-                                    <div class="col-md-2 col-sm-2">
-                                        <p>:9097512312312</p>
-                                        <p>:</p>
-                                        <p>:10</p>
-                                        <p>:100000</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-</div>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+        <button type="button" id="btn-rt" class="button button-sm" (click)="rollback()"><i class="fa fa-arrow-left" aria-hidden="true">Trở Về</i> </button>
+    </div>

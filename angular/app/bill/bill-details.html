@@ -1,23 +1,140 @@
-<div class="container-fluid">
+<div ng-app="myapp">
+    <!--Logo-->
+    <div class="container-fluid" id="logo">
+        <img src="images/1.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <!-- Menu Ngang-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <!-- Nút Toggle Xuất Hiện Khi Kéo Width xuống dưới 766px-->
+            <button type="button" class="navbar-toggle navbar-btn" id="sidebarCollapse" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!---->
+            <!-- Logo Giới Thiệu(Có Nút Chức Năng Mở Background Logo)-->
+            <a class="navbar-brand" href="#"><img src="images/logo.png" width="30" height="30" alt="" data-toggle="tooltip" data-placement="right" title="This is Logo"></a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="pull-LR">
+            <ul class="nav navbar-nav">
+                <!-- Icon Email -->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o" data-toggle="tooltip" data-placement="top" title="Email"></i>
+                        <span class="label label-success">2</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 2 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>To DucSonTran</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>To DatNguyen</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <!---------------------------------------------->
+                <!-- Icon Chuông(Thông Báo)---------------------->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thông Báo"></i>
+                        <span class="label label-primary">3</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail2" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 3 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>Team Support</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>jQuery</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>JavaScript</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!----------------------------------------------->
+                <!-- Icon Cờ(Sự Kiện)---------------------------------->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-flag" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Sự Kiện"></i>
+                        <span class="label label-danger">4</span>
+                    </a>
+                    <ul class="dropdown-menu" id="menu-mail3" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-header">
+                            You have 4 messages
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>HTML</p>
+                                <p><small><i class="fa fa-clock-o"></i> 5 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>CSS</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>BootStrap</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <p>AJAX</p>
+                                <p><small><i class="fa fa-clock-o"></i> 12 mins</small></p>
+                            </a>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a></a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<button type="button" class="btn btn-success" (click)="rollback()" style="width: 120px;height: 40px;line-height: 20px;"><i class="fa fa-arrow-left" aria-hidden="true">Trở Về</i></button>    
+<div class="container-fluid" *ngIf="Testing">
     <div class="col-md-12 text-center font">Chi Tiết Đơn Hàng</div>
      <div class="row">
          <div class="col-md-6 text-right">
-             <p>Hãng CPU</p>
-             <p>Công nghệ CPU:</p>
-             <p>Loại CPU:</p>
-             <p>Tốc độ CPU:</p>
-             <p>Bộ nhớ đệm:</p>
-             <p>Tốc độ tối đa:</p>
-             <p>Hỗ trợ RAM tối đa:</p>
-         </div>
+            {{Testing.BookCode}}
+        </div>
          <div class="col-md-6 text-left">
-             <p>Intel</p>
-             <p>Core i7</p>
-             <p>8550U</p>
-             <p>1.8GHz</p>
-             <p>8M</p>
-             <p>4.0Ghz</p>
-             <p>8Gb</p>
          </div>
      </div>
      <div class="row">

@@ -8,23 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var platform_browser_1 = require("@angular/platform-browser");
 var products_component_1 = require("./products.component");
 var product_details_component_1 = require("./product-details.component");
+var products_service_1 = require("./products.service");
 var ProductModule = /** @class */ (function () {
     function ProductModule() {
     }
     ProductModule = __decorate([
         core_1.NgModule({
             declarations: [
-                products_component_1.productsComponent, product_details_component_1.product_detailsComponent,
+                products_component_1.productsComponent, product_details_component_1.product_detailsComponent
             ],
-            imports: [
+            imports: [platform_browser_1.BrowserModule,
                 router_1.RouterModule.forChild([
-                    { path: 'products', component: products_component_1.productsComponent },
-                    { path: 'product_details', component: product_details_component_1.product_detailsComponent },
+                    { path: 'home/products', component: products_component_1.productsComponent },
+                    { path: 'home/products/:id', component: product_details_component_1.product_detailsComponent },
                 ]),
             ],
-            providers: []
+            providers: [
+                products_service_1.productsService
+            ]
         })
     ], ProductModule);
     return ProductModule;
